@@ -1,0 +1,79 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2018-01-24T08:08:41.526Z",
+    "end": "2018-01-24T08:08:41.539Z",
+    "duration": 13,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false,
+    "passPercentClass": "success",
+    "pendingPercentClass": "danger"
+  },
+  "suites": {
+    "uuid": "5e1cbdaa-9a55-475f-b609-206859056bb7",
+    "title": "",
+    "fullFile": "",
+    "file": "",
+    "beforeHooks": [],
+    "afterHooks": [],
+    "tests": [],
+    "suites": [
+      {
+        "uuid": "be938cac-56e9-448b-be00-32303b282ab9",
+        "title": "数组模块的测试",
+        "fullFile": "F:\\person-project\\study\\projectUtils\\test\\array.test.js",
+        "file": "\\test\\array.test.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "应该打印出测试库",
+            "fullTitle": "数组模块的测试 应该打印出测试库",
+            "timedOut": false,
+            "duration": 1,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "expect(_array2.default.test('测试库')).to.be.equal('测试库');",
+            "err": {},
+            "isRoot": false,
+            "uuid": "86e27474-9eb6-47c5-baa1-49cf4783562b",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "86e27474-9eb6-47c5-baa1-49cf4783562b"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 1,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      }
+    ],
+    "passes": [],
+    "failures": [],
+    "pending": [],
+    "skipped": [],
+    "duration": 0,
+    "root": true,
+    "rootEmpty": true,
+    "_timeout": 2000
+  },
+  "copyrightYear": 2018
+}
