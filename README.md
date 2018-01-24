@@ -11,6 +11,6 @@
 ## API文档
 ***
 Array<br>
-[unique](http://www.google.com/)
+[unique](https://github.com/ErnestWangZuNian/projectUtils/blob/master/src/module/array/index.js)     数组去重
 
 
