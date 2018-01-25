@@ -32,7 +32,7 @@ let array = {
         obj.equalValue(item, value) ? (result = index) : (result = -1);
       } else {
         console.log(item,value);
-        value === item ? (result = index) : (result = -1);
+        value !== item ? (result = -1) : (result = index);
         console.log(result);
       }
     });
