@@ -10,7 +10,8 @@
 > npm install --save-dev wzn-utils
 ## API文档
 ***
-Array<br>
+## Array<br>
 [unique](https://github.com/ErnestWangZuNian/projectUtils/blob/master/src/module/array/index.js)     数组去重
 
-
+## object<br>
+[equalValue](https://github.com/ErnestWangZuNian/projectUtils/blob/master/src/module/object/index.js)      判断两个对象值是否相等

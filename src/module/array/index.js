@@ -1,3 +1,4 @@
+import obj from "../object";
 let array = {
   /**
    *
@@ -18,17 +19,38 @@ let array = {
     return result;
   },
   /**
+   * 
+   *  从一个数组中去寻找value,找到返回value所在数组索引 ，找不到返回-1
+   * @param {any} array 
+   * @param {any} value 
+   * @returns 
+   */
+  findValueInArray: (array, value) => {
+    let result = -1;
+    array.map((item, index) => {
+      if (typeof value === "object") {
+        obj.equalValue(item, value) ? (result = index) : (result = -1);
+      } else {
+        console.log(item,value);
+        value === item ? (result = index) : (result = -1);
+        console.log(result);
+      }
+    });
+    console.log(result)
+    return result;
+  },
+  /**
    *
    * 传入item,从数组中删除它
    * @param {any} array
    * @param {any} item
    */
-  deleteItem: (array, item) => {
-     let index = array.indexOf(item);
-     if(index > -1){
-      array.splice(index,1)
-     }
-     return array
+  deleteItem: (targetArray, value) => {
+    let index = array.findValueInArray(targetArray,value);
+    if ( index > -1) {
+      targetArray.splice(index, 1);
+    }
+    return targetArray;
   }
 };
 export default array;

@@ -17,10 +17,18 @@ describe("数组去重的测试", function() {
   });
 });
 
+describe("寻找数组中某个值", function() {
+  it("应该输出对应值在数组中的索引", function() {
+    expect(
+      array.findValueInArray([1, 2], 1)
+    ).to.be.equal(-1);
+  });
+});
+ 
 describe("删除数组中某一项的测试", function() {
   it("应该输出删除对应值以后的数组", function() {
     expect(
-      array.deleteItem([1, 2, { name: "wzn" }], 1)
-    ).to.deep.equal([ 2, { name: "wzn" }]);
+      array.deleteItem([1, 2], 1)
+    ).to.deep.equal([2]);
   });
 });
