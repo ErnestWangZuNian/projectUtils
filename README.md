@@ -11,7 +11,9 @@
 ## API文档
 ***
 ## Array<br>
-[unique](https://github.com/ErnestWangZuNian/projectUtils/blob/master/src/module/array/index.js)     数组去重
+[unique](https://github.com/ErnestWangZuNian/projectUtils/blob/master/src/module/array/index.js)     数组去重</br>
+[findValueInArray](https://github.com/ErnestWangZuNian/projectUtils/blob/master/src/module/array/index.js)      从数据寻找某个值，如果有多个返回一个数组索引，如果没有，返回-1</br>
+[deleteValue](https://github.com/ErnestWangZuNian/projectUtils/blob/master/src/module/array/index.js)     删除数组中的对应值</br>
 
-## object<br>
+## object
 [equalValue](https://github.com/ErnestWangZuNian/projectUtils/blob/master/src/module/object/index.js)      判断两个对象值是否相等

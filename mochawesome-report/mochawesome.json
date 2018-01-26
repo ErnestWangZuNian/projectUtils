@@ -1,14 +1,14 @@
 {
   "stats": {
-    "suites": 1,
-    "tests": 1,
-    "passes": 1,
+    "suites": 3,
+    "tests": 3,
+    "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2018-01-24T08:08:41.526Z",
-    "end": "2018-01-24T08:08:41.539Z",
-    "duration": 13,
-    "testsRegistered": 1,
+    "start": "2018-01-26T01:23:06.263Z",
+    "end": "2018-01-26T01:23:06.281Z",
+    "duration": 18,
+    "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
     "other": 0,
@@ -19,7 +19,7 @@
     "pendingPercentClass": "danger"
   },
   "suites": {
-    "uuid": "5e1cbdaa-9a55-475f-b609-206859056bb7",
+    "uuid": "98ee30b3-2114-4549-a687-b0ecf4f3f39a",
     "title": "",
     "fullFile": "",
     "file": "",
@@ -28,39 +28,115 @@
     "tests": [],
     "suites": [
       {
-        "uuid": "be938cac-56e9-448b-be00-32303b282ab9",
-        "title": "数组模块的测试",
+        "uuid": "ae6d67ea-ce24-4f2c-9dda-aafb8a5936d6",
+        "title": "数组去重的测试",
         "fullFile": "F:\\person-project\\study\\projectUtils\\test\\array.test.js",
         "file": "\\test\\array.test.js",
         "beforeHooks": [],
         "afterHooks": [],
         "tests": [
           {
-            "title": "应该打印出测试库",
-            "fullTitle": "数组模块的测试 应该打印出测试库",
+            "title": "应该输出去重以后的数组",
+            "fullTitle": "数组去重的测试 应该输出去重以后的数组",
             "timedOut": false,
-            "duration": 1,
+            "duration": 0,
             "state": "passed",
             "speed": "fast",
             "pass": true,
             "fail": false,
             "pending": false,
-            "code": "expect(_array2.default.test('测试库')).to.be.equal('测试库');",
+            "code": "expect(_array2.default.unique([1, \"1\", 2, 2, { name: \"wzn\" }, { name: \"wzn\" }])).to.deep.equal([1, \"1\", 2, { name: \"wzn\" }]);",
             "err": {},
             "isRoot": false,
-            "uuid": "86e27474-9eb6-47c5-baa1-49cf4783562b",
+            "uuid": "ef6d0504-7a82-4607-adeb-abd24f520e06",
             "isHook": false,
             "skipped": false
           }
         ],
         "suites": [],
         "passes": [
-          "86e27474-9eb6-47c5-baa1-49cf4783562b"
+          "ef6d0504-7a82-4607-adeb-abd24f520e06"
         ],
         "failures": [],
         "pending": [],
         "skipped": [],
-        "duration": 1,
+        "duration": 0,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "bac770fc-01a3-43c9-ab31-023595d25299",
+        "title": "寻找数组中某个值",
+        "fullFile": "F:\\person-project\\study\\projectUtils\\test\\array.test.js",
+        "file": "\\test\\array.test.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "应该输出对应值在数组中的索引",
+            "fullTitle": "寻找数组中某个值 应该输出对应值在数组中的索引",
+            "timedOut": false,
+            "duration": 16,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "expect(_array2.default.findValueInArray([1, 2], 1)).to.be.equal(-1);",
+            "err": {},
+            "isRoot": false,
+            "uuid": "ca131c47-1e6b-4322-94be-938878b306b2",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "ca131c47-1e6b-4322-94be-938878b306b2"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 16,
+        "root": false,
+        "rootEmpty": false,
+        "_timeout": 2000
+      },
+      {
+        "uuid": "c3981469-745a-4719-9ae9-1755de51f953",
+        "title": "判断两个对象的值是否相等",
+        "fullFile": "F:\\person-project\\study\\projectUtils\\test\\obj.test.js",
+        "file": "\\test\\obj.test.js",
+        "beforeHooks": [],
+        "afterHooks": [],
+        "tests": [
+          {
+            "title": "应该输出true",
+            "fullTitle": "判断两个对象的值是否相等 应该输出true",
+            "timedOut": false,
+            "duration": 0,
+            "state": "passed",
+            "speed": "fast",
+            "pass": true,
+            "fail": false,
+            "pending": false,
+            "code": "expect(_object2.default.equalValue([[1, { name: 'wzn' }], 2, 3, 4], [[1, { name: 'wzn' }], 2, 3, 4])).to.be.ok;",
+            "err": {},
+            "isRoot": false,
+            "uuid": "a84cb944-b855-4fed-ace8-eaeef0c802bc",
+            "isHook": false,
+            "skipped": false
+          }
+        ],
+        "suites": [],
+        "passes": [
+          "a84cb944-b855-4fed-ace8-eaeef0c802bc"
+        ],
+        "failures": [],
+        "pending": [],
+        "skipped": [],
+        "duration": 0,
         "root": false,
         "rootEmpty": false,
         "_timeout": 2000
