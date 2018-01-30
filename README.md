@@ -17,3 +17,10 @@
 
 ## object
 [equalValue](https://github.com/ErnestWangZuNian/projectUtils/blob/master/src/module/object/index.js)      判断两个对象值是否相等
+
+
+## date
+[format](https://github.com/ErnestWangZuNian/projectUtils/blob/master/src/module/date/index.js)      格式化日期</br>
+[nyr](https://github.com/ErnestWangZuNian/projectUtils/blob/master/src/module/date/index.js)      只显示日期的年月日</br>
+[sfm](https://github.com/ErnestWangZuNian/projectUtils/blob/master/src/module/date/index.js)      只显示日期的时分秒</br>
+
