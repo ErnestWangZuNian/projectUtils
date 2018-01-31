@@ -113,7 +113,19 @@ add : (arg1, arg2) => {
         return r1 / r2 * Math.pow(10, t2 - t1);
     },
     reduce: (args,fn) => {
-      return Array.prototype.slice.call(args).reduce
-    }    
+      return Array.prototype.slice.call(args).reduce((arg1, arg2) => fn(arg1, arg2));
+    },
+    adds: () => {
+      return math.reduce(arguments,math.add);
+    },
+    subs: () => {
+        return math.reduce(arguments,math.sub);
+    },
+    muls: () => {
+        return math.reduce(arguments,math.mul);
+    },
+    divs:() => {
+        return math.reduce(arguments,math.div);
+    },
 }
 export default math;
