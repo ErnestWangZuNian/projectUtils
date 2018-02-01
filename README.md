@@ -32,6 +32,25 @@
 [subs](https://github.com/ErnestWangZuNian/projectUtils/blob/master/src/module/math/index.js)      多个数相减</br>  
 [muls](https://github.com/ErnestWangZuNian/projectUtils/blob/master/src/module/math/index.js)      多个数相乘</br>  
 [divs](https://github.com/ErnestWangZuNian/projectUtils/blob/master/src/module/math/index.js)      多个数相除</br>
+
+## regular 常用正则
+[email](https://github.com/ErnestWangZuNian/projectUtils/blob/master/src/module/regular/index.js)      邮箱正则</br>
+
+[phone](https://github.com/ErnestWangZuNian/projectUtils/blob/master/src/module/regular/index.js)      手机号码正则</br>
+
+[account](https://github.com/ErnestWangZuNian/projectUtils/blob/master/src/module/regular/index.js)      账户用户名正则</br>
+
+[password](https://github.com/ErnestWangZuNian/projectUtils/blob/master/src/module/regular/index.js)      密码正则</br>
+
+[idCard](https://github.com/ErnestWangZuNian/projectUtils/blob/master/src/module/regular/index.js)      身份证正则</br>
+
+[bankCard](https://github.com/ErnestWangZuNian/projectUtils/blob/master/src/module/regular/index.js)      银行卡正则</br>
+
+# other 其它常用函数
+[formatMoney](https://github.com/ErnestWangZuNian/projectUtils/blob/master/src/module/other/index.js)      金额格式化</br>
+
+
+
   
   
 

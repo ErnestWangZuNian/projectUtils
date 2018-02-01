@@ -117,7 +117,7 @@ let math = {
    * @returns
    */
   reduce: (args, fn) => {
-    return Array.prototype.slice.call(args).reduce((arg1, arg2) => fn(arg1, arg2))
+    return args.reduce((arg1, arg2) => fn(arg1, arg2))
   },
   /**
    *
@@ -126,9 +126,8 @@ let math = {
    * @param {any} arg2
    * @returns
    */
-  adds: () => {
-    console.log(math.adds)
-    return math.reduce(arguments, math.add);
+  adds: (...args) => {
+    return math.reduce(args, math.add);
   },
   /**
    *
@@ -137,8 +136,8 @@ let math = {
    * @param {any} arg2
    * @returns
    */
-  subs: () => {
-    return math.reduce(arguments, math.sub);
+  subs: (...args) => {
+    return math.reduce(args, math.sub);
   },
   /**
    *
@@ -147,8 +146,8 @@ let math = {
    * @param {any} arg2
    * @returns
    */
-  muls: () => {
-    return math.reduce(arguments, math.mul);
+  muls: (...args) => {
+    return math.reduce(args, math.mul);
   },
   /**
    *
@@ -157,8 +156,8 @@ let math = {
    * @param {any} arg2
    * @returns
    */
-  divs: () => {
-    return math.reduce(arguments, math.div);
+  divs: (...args) => {
+    return math.reduce(args, math.div);
   }
 };
 export default math;
