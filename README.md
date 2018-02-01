@@ -8,6 +8,7 @@
 > 1：使用npm安装
 ## npm
 > npm install --save-dev wzn-utils
+> 使用  import utils from 'wzn=utils'
 ## API文档
 ***
 ## Array<br>
