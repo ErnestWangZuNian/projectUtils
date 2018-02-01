@@ -28,7 +28,7 @@ describe("两个数相除测试", function() {
 
 describe("多个数相加测试", function() {
     it("应该输出多个相加以后的结果", function() {
-      expect(math.adds(0.34, 0.26,0.1)).to.be.equal(NaN);
+      expect(math.adds(0.2, 0.1)).to.be.equal(NaN);
     });
 });
 
