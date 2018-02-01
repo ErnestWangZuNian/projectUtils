@@ -27,7 +27,7 @@ let date = {
       "5": "/u4e94",
       "6": "/u516d"
     };
-    if (/(Y+)/.test(fmt)) {
+    if (/(y+)/.test(fmt)) {
       fmt = fmt.replace(
         RegExp.$1,
         `${date.getFullYear()}`.substr(4 - RegExp.$1.length)

@@ -23,4 +23,15 @@
 [format](https://github.com/ErnestWangZuNian/projectUtils/blob/master/src/module/date/index.js)      格式化日期</br>
 [nyr](https://github.com/ErnestWangZuNian/projectUtils/blob/master/src/module/date/index.js)      只显示日期的年月日</br>
 [sfm](https://github.com/ErnestWangZuNian/projectUtils/blob/master/src/module/date/index.js)      只显示日期的时分秒</br>
+## math 
+[add](https://github.com/ErnestWangZuNian/projectUtils/blob/master/src/module/math/index.js)      两个数相加</br>  
+[sub](https://github.com/ErnestWangZuNian/projectUtils/blob/master/src/module/math/index.js)      两个数相减</br> 
+[mul](https://github.com/ErnestWangZuNian/projectUtils/blob/master/src/module/math/index.js)      两个数相乘</br> 
+[div](https://github.com/ErnestWangZuNian/projectUtils/blob/master/src/module/math/index.js)      两个数相除</br>
+[adds](https://github.com/ErnestWangZuNian/projectUtils/blob/master/src/module/math/index.js)      多个数相加</br>
+[subs](https://github.com/ErnestWangZuNian/projectUtils/blob/master/src/module/math/index.js)      多个数相减</br>  
+[muls](https://github.com/ErnestWangZuNian/projectUtils/blob/master/src/module/math/index.js)      多个数相乘</br>  
+[divs](https://github.com/ErnestWangZuNian/projectUtils/blob/master/src/module/math/index.js)      多个数相除</br>
+  
+  
 

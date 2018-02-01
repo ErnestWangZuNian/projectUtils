@@ -35,6 +35,7 @@ add : (arg1, arg2) => {
             arg1 = Number(arg1.toString().replace(".", ""));
             arg2 = Number(arg2.toString().replace(".", ""));
         }
+        console.log(typeof ((arg1 + arg2) / m))
         return (arg1 + arg2) / m;
     },
     /**
@@ -46,22 +47,22 @@ add : (arg1, arg2) => {
      */
     sub : (arg1, arg2) => {
 
-        arg1 = arg1 || 0;
-        arg2 = arg2 || 0;
         var r1, r2, m, n;
         try {
             r1 = arg1.toString().split(".")[1].length;
-        } catch (e) {
+        }
+        catch (e) {
             r1 = 0;
         }
         try {
             r2 = arg2.toString().split(".")[1].length;
-        } catch (e) {
+        }
+        catch (e) {
             r2 = 0;
         }
-        m = Math.pow(10, Math.max(r1, r2));
-        n = r1 >= r2 ? r1 : r2;
-        return ((arg1 * m - arg2 * m) / m).toFixed(n);
+        m = Math.pow(10, Math.max(r1, r2)); //last modify by deeka //动态控制精度长度
+        n = (r1 >= r2) ? r1 : r2;
+        return parseFloat(((arg1 * m - arg2 * m) / m).toFixed(n));
     },
     /**
      * 
@@ -112,18 +113,54 @@ add : (arg1, arg2) => {
         r2 = Number(arg2.toString().replace(".", ""));
         return r1 / r2 * Math.pow(10, t2 - t1);
     },
+    /**
+     * 
+     * 累计计算
+     * @param {any} arg1 
+     * @param {any} arg2 
+     * @returns 
+     */
     reduce: (args,fn) => {
       return Array.prototype.slice.call(args).reduce((arg1, arg2) => fn(arg1, arg2));
     },
+     /**
+     * 
+     * 累计相加
+     * @param {any} arg1 
+     * @param {any} arg2 
+     * @returns 
+     */
     adds: () => {
+      console.log(arguments,'wangzunian')
       return math.reduce(arguments,math.add);
     },
+    /**
+     * 
+     * 累计相减
+     * @param {any} arg1 
+     * @param {any} arg2 
+     * @returns 
+     */
     subs: () => {
         return math.reduce(arguments,math.sub);
     },
+    /**
+     * 
+     * 累计相乘
+     * @param {any} arg1 
+     * @param {any} arg2 
+     * @returns 
+     */
     muls: () => {
         return math.reduce(arguments,math.mul);
     },
+    /**
+     * 
+     * 累计相除
+     * @param {any} arg1 
+     * @param {any} arg2 
+     * @returns 
+     */
     divs:() => {
         return math.reduce(arguments,math.div);
     },
