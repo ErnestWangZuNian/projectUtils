@@ -49,6 +49,7 @@
 
 # other 其它常用函数
 [formatMoney](https://github.com/ErnestWangZuNian/projectUtils/blob/master/src/module/other/index.js)      金额格式化</br>
+[formatPhone](https://github.com/ErnestWangZuNian/projectUtils/blob/master/src/module/other/index.js)      手机脱敏</br>
 
 
 

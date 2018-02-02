@@ -43,6 +43,15 @@ let other = {
       s[1] += new Array(prec - s[1].length + 1).join("0");
     }
     return s.join(dec);
-  }
+  },
+  /**
+   * 
+   * 手机脱敏
+   * @param {string} phone 
+   * @returns 
+   */
+  formatPhone: (phone) => {
+    return phone.replace(/(\d{3})\d{4}(\d{4})/, "$1****$2");
+  },
 };
 export default other;
