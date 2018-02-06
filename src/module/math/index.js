@@ -113,6 +113,7 @@ let math = {
    *
    * 累计计算
    * @param {any} arg1
+   * 
    * @param {any} arg2
    * @returns
    */
