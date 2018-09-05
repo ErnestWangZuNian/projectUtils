@@ -4,6 +4,7 @@ import obj from './module/object'
 import math from './module/math'
 import regular from './module/regular'
 import other from './module/other'
+import storage from './module/storage'
 
 let utils = {
     array,
@@ -11,7 +12,8 @@ let utils = {
     obj,
     math,
     regular,
-    other
+    other,
+    storage
 }
 
 export default utils;
