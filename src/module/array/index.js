@@ -6,11 +6,11 @@ let array = {
    * @param {any} array
    * @returns
    */
-  unique: (array,attr) => {
+  unique: (array, attr) => {
     let result = [];
     let hash = {};
     array.map(item => {
-      let key = typeof item + item;
+      let key = attr ? typeof item[attr] + item[attr] : typeof item + item;
       if (hash[key] !== 1) {
         result.push(item);
         hash[key] = 1;
@@ -39,12 +39,12 @@ let array = {
         }
       }
     });
-    if(tempArray.length === 0){
-      result = -1
-    }else{
-      if(tempArray.length === 1){
-        result = tempArray[0]
-      }else{
+    if (tempArray.length === 0) {
+      result = -1;
+    } else {
+      if (tempArray.length === 1) {
+        result = tempArray[0];
+      } else {
         result = tempArray;
       }
     }
@@ -57,11 +57,11 @@ let array = {
    * @param {any} item
    */
   deleteValue: (targetArray, value) => {
-    targetArray =  targetArray.filter(item => {
-      if(typeof value === 'object'){
-        return obj.equalValue(item, value) === false
-      }else{
-        return  item !== value
+    targetArray = targetArray.filter(item => {
+      if (typeof value === "object") {
+        return obj.equalValue(item, value) === false;
+      } else {
+        return item !== value;
       }
     });
     return targetArray;
