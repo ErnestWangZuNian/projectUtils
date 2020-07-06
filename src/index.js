@@ -29,4 +29,6 @@ let utils = {
   isString: (target) => Object.prototype.toString.call(target) === '[object String]',
 };
 
+console.log()
+
 export default utils;
